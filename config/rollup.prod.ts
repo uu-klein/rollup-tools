@@ -1,6 +1,6 @@
 /*
  * @Author: tyson
- * @LastEditTime: 2021-04-01 15:22:03
+ * @LastEditTime: 2021-04-01 19:54:32
  * @LastEditors: Please set LastEditors
  * @Description: 打包配置
  * @FilePath: \obtool\config\rollup.prod.ts
@@ -61,7 +61,11 @@ import {
  * @description: 使用 Babel  
  * @Date: 2021-04-01 15:20:17
  */
-import babel from 'rollup-plugin-babel';
+// import babel from 'rollup-plugin-babel';
+
+import {
+    babel
+} from '@rollup/plugin-babel';
 
 /**
  * @author: tyson
@@ -76,6 +80,13 @@ import replace from '@rollup/plugin-replace';
  * @Date: 2021-04-01 15:13:11
  */
 import typescript from 'rollup-plugin-typescript2';
+
+/**
+ * @author: tyson
+ * @description: postcss
+ * @Date: 2021-04-01 18:25:47
+ */
+import postcss from 'rollup-plugin-postcss';
 
 /**
  * @author: tyson
@@ -175,6 +186,12 @@ const plugins = [
     typescript(),
     babel({
         exclude: 'node_modules/**',
+        babelHelpers: 'bundled',
+    }),
+    postcss({
+        modules: true,
+        minimize: env === 'production' ? true : false,
+        extract: true,
     }),
     uglify(),
     replace({
