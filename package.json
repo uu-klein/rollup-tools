@@ -1,0 +1,41 @@
+{
+  "name": "obtool",
+  "version": "1.0.0",
+  "description": "ob-Tool",
+  "main": "dist/ob-tools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config config/rollup.prod.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.xiaomidianjin.com/tool/obtool.git"
+  },
+  "keywords": [
+    "tool",
+    "ob",
+    "obTool"
+  ],
+  "author": "tyson",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@types/node": "^14.14.37",
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  }
+}
