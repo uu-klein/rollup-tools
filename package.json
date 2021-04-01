@@ -1,6 +1,6 @@
 {
   "name": "obtool",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "ob-Tool",
   "main": "dist/ob-tools.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "rollup-plugin-uglify": "^6.0.4",
     "ts-node": "^9.1.1",
     "tslib": "^2.1.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "vue": "^3.0.10"
   }
 }
