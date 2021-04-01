@@ -1,6 +1,6 @@
 {
   "name": "obtool",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "ob-Tool",
   "main": "dist/ob-tools.js",
   "scripts": {
@@ -20,9 +20,11 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.14",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@rollup/plugin-replace": "^2.4.2",
+    "@types/cssnano": "^4.0.0",
     "@types/node": "^14.14.37",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.6.3",
@@ -41,9 +43,7 @@
     "ts-node": "^9.1.1",
     "tslib": "^2.1.0",
     "typescript": "^4.2.3",
-    "vue": "^3.0.10"
-  },
-  "dependencies": {
-    "@rollup/plugin-babel": "^5.3.0"
+    "vue": "^3.0.10",
+    "cssnano": "^4.1.10"
   }
 }

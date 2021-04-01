@@ -1,6 +1,6 @@
 /*
  * @Author: tyson
- * @LastEditTime: 2021-04-01 19:54:32
+ * @LastEditTime: 2021-04-01 20:27:44
  * @LastEditors: Please set LastEditors
  * @Description: 打包配置
  * @FilePath: \obtool\config\rollup.prod.ts
@@ -83,10 +83,17 @@ import typescript from 'rollup-plugin-typescript2';
 
 /**
  * @author: tyson
- * @description: postcss
+ * @description: 编译css
  * @Date: 2021-04-01 18:25:47
  */
 import postcss from 'rollup-plugin-postcss';
+
+/**
+ * @author: tyson
+ * @description: 压缩css
+ * @Date: 2021-04-01 20:12:39
+ */
+import cssnano from 'cssnano';
 
 /**
  * @author: tyson
@@ -192,6 +199,9 @@ const plugins = [
         modules: true,
         minimize: env === 'production' ? true : false,
         extract: true,
+        plugins: [
+            cssnano(),
+        ]
     }),
     uglify(),
     replace({
