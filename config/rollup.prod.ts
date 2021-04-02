@@ -1,12 +1,13 @@
 /*
  * @Author: tyson
- * @LastEditTime: 2021-04-01 20:27:44
+ * @LastEditTime: 2021-04-02 13:29:34
  * @LastEditors: Please set LastEditors
- * @Description: 打包配置
+ * @Description: 生产打包配置
  * @FilePath: \obtool\config\rollup.prod.ts
  * 
  * @Date: 2021-04-01 14:40:26
  */
+
 /**
  * @author: tyson
  * @description: package.json配置
@@ -196,7 +197,7 @@ const plugins = [
         babelHelpers: 'bundled',
     }),
     postcss({
-        modules: true,
+        modules: false,
         minimize: env === 'production' ? true : false,
         extract: true,
         plugins: [
