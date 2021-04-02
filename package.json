@@ -1,8 +1,9 @@
 {
   "name": "obtool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ob-Tool",
   "main": "dist/ob-tools.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config config/rollup.prod.ts"
