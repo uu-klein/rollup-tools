@@ -1,6 +1,6 @@
 {
   "name": "obtool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ob-Tool",
   "main": "dist/ob-tools.js",
   "scripts": {
